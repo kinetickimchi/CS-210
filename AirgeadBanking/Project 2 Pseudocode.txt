@@ -1,0 +1,40 @@
+/*
+Name: Kyunghoon Lee
+Date: 10 February 2024
+CS-210
+Project Two Pseudocode
+*/
+
+Display interface for “Data Input”
+	Prompt user for initial investment amount
+	Prompt user for monthly deposit
+	Prompt user for annual interest rate (compounded)
+	Prompt user for number of years investment has to grow
+
+Calculate monthly interest rate:
+	monthlyInterestRate = annualInterestRate / 12 / 100
+
+Calculate total number of months:
+	totalMonths = numYears * 12
+
+Get (any key) input from user to continue
+
+Loop to calculate figures for report 1 (without monthly deposits) from 1 to numYears:
+	Calculate totalAnnualInterest = initialInvestment * monthlyInterestRate
+	Calculate yearEndBalance = initialInvestment + totalAnnualInterest
+
+Display report 1 in row/column format. Each row contains year, year end balance, and year end earned interest.
+
+Loop to calculate figures for report 2 (with monthly deposits) from 1 to numYears:
+	Set currentTotal to initialInvestment
+	Loop for each month (1 - 12):
+		Calculate monthlyInterest = currentTotal * monthlyInterestRate
+		Calculate monthly end balance = currentTotal + monthlyDeposit + monthlyInterest
+
+Display report 2 in row/column format. Each row contains year, year end balance, and year end earned interest.
+
+Ask user if they would like to start over (y/n)
+	If yes:
+		Prompt for new inputs from original “Data Input” menu
+	If no:
+		Exit app
