@@ -1,1 +1,20 @@
-# CS-210
+# CS-210: Airgead Banking
+This document details a reflection on the Airgead Banking app, created as Project Two of CS-210.
+
+## Summarize the project and what problem it was solving.
+The main purpose of this project was to develop an application that would allow users to input investments, and then see how those investments would grow over time. The goal behind this was to teach students the basic tenets of financial responsibility while also practicing the use of pseudocode and following a functional requirements document.
+
+## What did you do particularly well?
+I believe one thing I did particularly well was keeping my code modular in the form of efficiently separating appropriate functions into separate files (such as displaying the main menu, generating reports, performing calculations, and the appropriate header files). This makes it easier to further iterate on this code in the future, as well as potentially making debugging or refactoring easier.
+
+## Where could you enhance your code? How would these improvements make your code more efficient, secure, and so on?
+One area of improvement in my code would be in main.cpp- I chose to implement the function for displaying the main menu here, in addition to taking the user's input and calling the functions for storing and manipulating that data. Moving this into another separate file would help reduce the amount of code within main.cpp, and increase modularity. As an example, this separation could provide benefit when trying to implement more complex operations into the main menu.
+
+## Which pieces of the code did you find most challenging to write, and how did you overcome this? What tools or resources are you adding to your support network?
+I found I had the most trouble with properly formatting the output reports to take into account the change in number size as the investment grew over time. Because there were so many possibilities that could result in different combinations of numbers, I had difficulty forcing text to be right-justified in a table format while retaining readability. In the end, I had to compromise by choosing an expected static width for the full table, and accepting that upon reaching values of 10,000 or greater, the numbers would no longer be lined up perfectly. I found that an effective tool in assisting me here was looking at examples of other text-based tables that performed similar functions, and trying out various options provided by users from StackOverflow. Additionally, I found that I was able to save some time when testing out various options by using a separate web-based debugger, so I could keep the rest of my work separate from the functions I was testing.
+
+## What skills from this project will be particularly transferable to other projects or course work?
+The most helpful skill I developed over the course of this project was adhering to a Functional Requirements document. While creating applications on my own time is good for practice, as a prospective software developer it's not only important to be well aware of best practices and industry standards, but also that different companies may have varying expectations for their codebases, and forcing myself to adhere to a requirements document ensured I was avoiding bad habits I may have picked up in my learning in addition to maintaining client expectations.
+
+## How did you make this program maintanable, readable, and adaptable?
+My main focus was to ensure proper inclusion of in-line comments throughout all of my code. While I may understand exactly what I am looking for as the sole programmer when looking at my code, it can be far more difficult when reviewing someone else's code to get an idea of what they are trying to accomplish without detailed comments. While I could have done a better job of grouping related functions into appropriate separate files, the separation I was able to achieve makes it easier to review and debug specific parts of the application and potentially add further functionality later on.
